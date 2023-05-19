@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 25px;
+}
+
+.searchItem {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.searchBox {
+  border-radius: 10px;
+  height: 34px;
+  width: 300px;
+  border: none;
+  margin-left: 18px;
+}
+
+.headerItem {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.headerItem2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: grid;
+  margin: 10px 25px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.fourGroupCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 20px 0 0 0;
+}
+
+.subMainCard:hover {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.565);
+}
+
+.subMainCard {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: grid;
+  grid-column: 1/span 3;
+  grid-template-columns: 1fr 1fr;
+}
+
+.subMainCard2:hover {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.565);
+}
+
+.subMainCard2 {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: grid;
+}
+
+.subCard:hover {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.565);
+}
+
+.subCard {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.secondPart {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondPartBig {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.bigText {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.secondPart h2 {
+  padding: 10px;
+}
+
+.container {
+  padding: 25px;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.combined {
+  object-fit: cover;
+  width: 100%;
+  grid-column: 2/span3;
+}
+
+.subCardImg {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+}
+
+.subMainCardImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.exploreMore {
+  align-self: center;
+  font-size: 80px;
+  padding-left: 100px;
+}
+
+.completeButton {
+  padding: 12px;
+  background: black;
+  color: white;
+  border-radius: 20px;
+  border: none;
+}
+
+.watchButton {
+  margin: 10px;
+  align-self: center;
+  padding: 5px;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  color: #FF8F4E;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+@media screen and (max-width:750px) {
+  .searchBox {
+    border-radius: 10px;
+    height: 34px;
+    width: 200px;
+  }
+
+  .exploreMore {
+    align-self: center;
+    font-size: 25px;
+    padding-left: 20px;
+  }
+
+  .fourGroupCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    padding: 20px 0 0 0;
+  }
+
+  .subMainCard {
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: grid;
+    grid-column: 1/span 3;
+    grid-template-columns: 1fr;
+  }
+
+  .subMainCard2 {
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: grid;
+    grid-column: 1/span 3;
+  }
+
+}
